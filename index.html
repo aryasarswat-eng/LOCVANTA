@@ -87,8 +87,14 @@ document.getElementById('ask').addEventListener('click',()=>{
   out.textContent='सुझाई गई सेवा: '+service+'. यह शुरुआती नियम-आधारित डेमो है, वास्तविक AI नहीं। अभी बुकिंग सिस्टम जुड़ा नहीं है।';
 });
 document.getElementById('partner').addEventListener('click',()=>{
-  document.getElementById('partnerMessage').textContent='पार्टनर रजिस्ट्रेशन फॉर्म अगले चरण में जोड़ा जाएगा।';
+  
+document.getElementById('partner').addEventListener('click',()=>{
+  window.open(
+    'https://docs.google.com/forms/d/e/1FAIpQLSeP7OYrAnr38MUYawZ_5vaqUSAgFH87aJjeL95QbABOQApIog/viewform?usp=header',
+    '_blank'
+  );
 });
+
 </script>
 </body>
 </html>
